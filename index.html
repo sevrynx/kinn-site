@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Static page: no inline code, nothing loaded from other sites. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Kinn: see how your days really feel</title>
+  <meta name="description" content="Kinn is a private planner for todos, habits and goals that shows how they make you feel. End-to-end encrypted, works offline, on Android and the web.">
+  <meta name="theme-color" content="#FBFAFF" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#13101F" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Kinn">
+  <meta property="og:description" content="See how your todos, habits and goals make you feel. Private by design.">
+  <meta property="og:image" content="https://kinn.klyra.cc/app/icons/Icon-512.png">
+  <link rel="icon" type="image/png" href="/app/favicon.png">
+  <link rel="apple-touch-icon" href="/app/icons/Icon-192.png">
+  <link rel="preload" href="/landing/Nunito.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/landing/style.css">
+  <!-- Old links (sign-up emails, bookmarks) pointed at the app here: send them on to /app/. -->
+  <script src="/landing/redirect.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="/" aria-label="Kinn home">
+    <span class="logo" aria-hidden="true"><i class="c-bubblegum"></i><i class="c-sky"></i><i class="c-lemon"></i><i class="c-mint"></i></span>
+    Kinn
+  </a>
+  <nav class="auth" aria-label="Account">
+    <a class="btn ghost" href="/app/#/sign-in">Login</a>
+    <a class="btn primary" href="/app/#/sign-in?mode=create">Register</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="pill">Todos · Habits · Goals · Feelings</p>
+      <h1>See how your days <span class="hl">really feel.</span></h1>
+      <p class="lead">Kinn is a planner that asks one more question when you tick something off: how did it feel? Over time it shows you what lifts you up and what drains you.</p>
+      <div class="cta">
+        <a class="btn primary big" href="/app/#/sign-in?mode=create">Register, it's free</a>
+        <a class="btn ghost big" href="/app/#/sign-in">Login</a>
+      </div>
+      <p class="small">Use it in your browser, or <a href="/android/">get the Android app</a>.</p>
+    </div>
+
+    <div class="phone" aria-hidden="true">
+      <div class="screen">
+        <p class="p-over">TUESDAY</p>
+        <p class="p-title">A fresh day</p>
+        <div class="p-card c-tint-lilac">
+          <p class="p-label">How are you feeling?</p>
+          <div class="moods">
+            <img src="/landing/emoji/joyful.png" alt=""><img src="/landing/emoji/calm.png" alt="">
+            <img src="/landing/emoji/proud.png" alt=""><img src="/landing/emoji/grateful.png" alt="">
+            <img src="/landing/emoji/anxious.png" alt=""><img src="/landing/emoji/drained.png" alt="">
+          </div>
+        </div>
+        <div class="p-card">
+          <p class="p-label">Todos <span>1 of 2 done</span></p>
+          <p class="row done"><b class="box on"></b>Call grandma</p>
+          <p class="row"><b class="box"></b>Finish the report</p>
+        </div>
+        <div class="p-card">
+          <p class="p-label">Habits <span>1 left</span></p>
+          <p class="row"><b class="box"></b>Evening walk <em class="streak c-tint-peach">5 day streak</em></p>
+        </div>
+        <div class="p-sheet">
+          <p class="p-label">How did it feel?</p>
+          <div class="chips">
+            <span class="chip c-mint"><img src="/landing/emoji/grateful.png" alt="">Grateful</span>
+            <span class="chip"><img src="/landing/emoji/calm.png" alt="">Calm</span>
+          </div>
+          <p class="surprise">Expected anxious, felt grateful. A nice surprise!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" aria-labelledby="f-title">
+    <h2 id="f-title">Plan it. Do it. Feel it.</h2>
+    <div class="grid">
+      <article class="card c-tint-bubblegum">
+        <img src="/landing/emoji/joyful.png" alt="">
+        <h3>Feelings, not just checkmarks</h3>
+        <p>Tick a todo or a habit and say how it felt. Do a quick mood check-in whenever you like.</p>
+      </article>
+      <article class="card c-tint-sky">
+        <img src="/landing/emoji/anxious.png" alt="">
+        <h3>Expected vs. felt</h3>
+        <p>Guess how something will feel before you do it. Kinn shows you the nice surprises and the tough ones.</p>
+      </article>
+      <article class="card c-tint-lemon">
+        <img src="/landing/emoji/drained.png" alt="">
+        <h3>What lifts and drains you</h3>
+        <p>An emotion calendar, your mood by weekday, and the things that leave you better or worse off.</p>
+      </article>
+      <article class="card c-tint-mint">
+        <img src="/landing/emoji/proud.png" alt="">
+        <h3>Habits and goals</h3>
+        <p>Streaks, a weekly feeling strip for every habit, and goals that bring your todos and habits together.</p>
+      </article>
+      <article class="card c-tint-peach">
+        <img src="/landing/emoji/calm.png" alt="">
+        <h3>Works offline</h3>
+        <p>Everything saves on your phone first and syncs when you're back online. Tick things right on the home-screen widgets.</p>
+      </article>
+      <article class="card c-tint-lilac">
+        <img src="/landing/emoji/grateful.png" alt="">
+        <h3>Private by design</h3>
+        <p>Your entries are encrypted on your device before they leave it. We can't read them, and nobody else can either.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="privacy c-tint-lilac" aria-labelledby="p-title">
+    <h2 id="p-title">Your feelings stay yours</h2>
+    <ul>
+      <li><b>End-to-end encrypted.</b> The server only ever stores scrambled data. It can't see your goals, todos, habits or how you felt.</li>
+      <li><b>Your password never leaves your device.</b> It is turned into keys on your phone or in your browser.</li>
+      <li><b>One recovery key.</b> You get it when you register. Keep it safe: without your password or that key, nobody can restore your account, not even us.</li>
+    </ul>
+  </section>
+
+  <section class="get" aria-labelledby="g-title">
+    <h2 id="g-title">Get Kinn</h2>
+    <div class="grid two">
+      <article class="card">
+        <h3>Android</h3>
+        <p>Home-screen widgets, fingerprint lock, works offline. Updates arrive inside the app.</p>
+        <a class="btn primary" href="/android/">Download for Android</a>
+      </article>
+      <article class="card">
+        <h3>Web</h3>
+        <p>Open Kinn in any browser, on any computer. Nothing to install.</p>
+        <a class="btn ghost" href="/app/#/sign-in">Open the web app</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Kinn is made by <b>Klyra</b>.</p>
+  <p class="small">Help with Kinn: <a href="mailto:support@klyra.cc">support@klyra.cc</a> · Everything else: <a href="mailto:contact@klyra.cc">contact@klyra.cc</a></p>
+  <p class="small">Emoji: <a href="https://github.com/googlefonts/noto-emoji">Noto Emoji</a>, Apache License 2.0. Font: Nunito, SIL Open Font License.</p>
+</footer>
+</body>
+</html>

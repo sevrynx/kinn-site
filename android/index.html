@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Kinn for Android</title>
+  <link rel="icon" type="image/png" href="/app/favicon.png">
+  <style>
+    :root { --bg:#FBFAFF; --card:#FFFFFF; --text:#1B1530; --text2:#4A4466; --primary:#5B3BD6; --mint:#D3F7EA; --mintInk:#064A38; --lemon:#FFF3BF; --lemonInk:#5C4300; --line:#E6E1F5; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#13101F; --card:#1E1A31; --text:#F4F1FF; --text2:#C9C3E3; --primary:#B69CFF; --mint:#28424C; --mintInk:#69E5C1; --lemon:#4B4037; --lemonInk:#FFDE68; --line:#372F55; } }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font: 17px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 520px; margin: 0 auto; padding: 40px 20px 60px; }
+    .tiles { display:flex; gap:10px; margin-bottom: 24px; }
+    .tiles span { width:44px; height:44px; border-radius:13px; display:block; transform: rotate(-8deg); }
+    h1 { font-size: 34px; line-height: 1.15; margin: 0 0 8px; font-weight: 900; }
+    p.lead { color: var(--text2); margin: 0 0 28px; }
+    a.button { display:block; text-align:center; background:var(--primary); color:#fff; text-decoration:none; font-weight:800; padding:18px; border-radius:18px; font-size:19px; }
+    @media (prefers-color-scheme: dark) { a.button { color:#1B1530; } }
+    .meta { text-align:center; color:var(--text2); font-size:14px; margin: 10px 0 28px; }
+    .card { background:var(--card); border:1.5px solid var(--line); border-radius:20px; padding: 18px 20px; margin-bottom: 16px; }
+    .card h2 { font-size: 18px; margin: 0 0 8px; }
+    ol { margin: 0; padding-left: 20px; } li { margin: 6px 0; }
+    .note { background: var(--mint); color: var(--mintInk); border-radius:16px; padding: 14px 16px; font-weight: 600; }
+    .web { background: var(--lemon); color: var(--lemonInk); border-radius:16px; padding: 14px 16px; margin-top: 16px; }
+    .web a { color: inherit; font-weight: 800; }
+    code { font-size: 12px; word-break: break-all; color: var(--text2); }
+  </style>
+</head>
+<body>
+<main>
+  <div class="tiles" aria-hidden="true">
+    <span style="background:#FF8DC3"></span><span style="background:#6CC4FF"></span><span style="background:#FFD84D"></span><span style="background:#4FE0B6"></span>
+  </div>
+  <h1>Kinn for Android</h1>
+  <p class="lead">See how your goals, todos and habits make you feel. Private by design: everything you write is encrypted on your phone.</p>
+
+  <a class="button" href="kinn-1.7.0.apk" download>Download Kinn 1.7.0</a>
+  <div class="meta">Android 8 or newer · 22 MB</div>
+
+  <div class="card">
+    <h2>Install</h2>
+    <ol>
+      <li>Tap <b>Download</b>, then open the file.</li>
+      <li>If Android asks, allow your browser to <b>install unknown apps</b>.</li>
+      <li>Tap <b>Install</b>, open Kinn and create your account.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Updates</h2>
+    Kinn tells you when a new version is out (Me &rsaquo; Update available). Updates install over the app and keep your data.
+  </div>
+
+  <div class="note">Your data is end-to-end encrypted. Save your recovery key when the app shows it: without it, nobody (not even us) can restore your account if you forget your password.</div>
+
+  <div class="web">No Android phone? <a href="/app/">Use Kinn in your browser</a>.</div>
+
+  <div class="card" style="margin-top:16px">
+    <h2>Need help?</h2>
+    Email <a href="mailto:support@klyra.cc">support@klyra.cc</a>.
+  </div>
+
+  <div class="card" style="margin-top:16px">
+    <h2>Check the file</h2>
+    APK SHA-256:<br><code>20886d92b7cd1d7182dde266cf8c626504cc2941ef29eb46b94dd6594d7b5437</code><br><br>
+    Signing certificate SHA-256:<br><code>c18940ad515656fe756122b36f0d0e2cf1b810887c3570dc1670688ef2fd16a2</code>
+  </div>
+</main>
+</body>
+</html>
