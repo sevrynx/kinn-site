@@ -40,9 +40,17 @@
     @media (prefers-color-scheme: dark) {
       :root { --kinn-top: #13101F; --kinn-bottom: #1E1A31; }
     }
-    html, body { margin: 0; height: 100%; }
-    body {
-      background: linear-gradient(var(--kinn-top) 50%, var(--kinn-bottom) 50%);
+    /* Solid colors only: iOS (26.1+) paints the installed web app's status
+       bar from the page background and can't read a gradient (it shows
+       white). The home-indicator strip is its own element instead. */
+    html, body { margin: 0; height: 100%; background-color: var(--kinn-top); }
+    #kinn-bottom {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: env(safe-area-inset-bottom, 0);
+      background-color: var(--kinn-bottom);
     }
     #kinn-app {
       position: fixed;
@@ -54,6 +62,7 @@
   </style>
 </head>
 <body>
+  <div id="kinn-bottom"></div>
   <div id="kinn-app"></div>
   <script src="flutter_bootstrap.js" async></script>
 </body>
